@@ -1,25 +1,142 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kothapelly Sai Sidhartha - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="portfolio.js"></script>
+/* Global Styles */
+/* LeetCode Badge Styling */
+.badge {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.badge-image {
+    max-width: 150px; /* Adjust as needed */
+    height: auto;
+    border: 2px solid #000000; /* Updated border color for darker theme */
+    border-radius: 8px; /* Optional rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow */
+}
+
+.badge p {
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: #ffffff; /* Updated text color */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff; /* Updated text color for darker theme */
+    background-color: #121212; /* Darker background color */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #000000, #333333); /* Updated gradient for darker theme */
+    color: #ffffff;
+    padding: 20px 0; /* Reduced padding */
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background 0.3s ease, padding 0.3s ease;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; /* Slightly smaller font size */
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.1em; /* Reduced font size */
+        }
+
+        section h2 {
+            color: #66FCF1;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .about-flex {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .profile-image img {
+            max-width: 200px;
+            border-radius: 50%;
+        }
+
+        .about-text {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .project {
+            background-color: #0B0C10;
+            border: 1px solid #66FCF1;
+            border-radius: 5px;
+            margin: 10px 0;
+            padding: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .about-flex {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 15px 0;
+            }
+
+            footer {
+                padding: 8px 0;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1 class="animated-title">Hello I am Sai Sidhartha!</h1>
+            <h1 class="animated-title">Hello, I am Sai Sidhartha!</h1>
             <p>B. Tech in Computer Science & Engineering (AI & ML)</p>
             <div class="contact-info">
-                <a href="mailto:kothapallysidhartha@gmail.com">kothapallysidhartha@gmail.com</a> |
+                <a href="mailto:kothapallysidhartha@gmail.com">Email</a> |
                 <a href="https://github.com/kothapallysidhartha">GitHub</a> |
                 <a href="https://www.linkedin.com/in/kothapellysaisidhartha">LinkedIn</a>
             </div>
         </div>
     </header>
-    
+
     <section id="about">
         <div class="container about-flex">
             <div class="profile-image">
@@ -27,10 +144,7 @@
             </div>
             <div class="about-text">
                 <h2>About Me</h2>
-                <p>
-                    I am a passionate Computer Science & Engineering student with a focus on Artificial Intelligence and Machine Learning. 
-                    I enjoy working on challenging projects that allow me to apply my programming and problem-solving skills.
-                </p>
+                <p>I am a passionate Computer Science & Engineering student with a focus on Artificial Intelligence and Machine Learning. I enjoy working on challenging projects that allow me to apply my programming and problem-solving skills.</p>
             </div>
         </div>
     </section>
@@ -76,38 +190,6 @@
                 <p>C Programming</p>
                 <p>A console-based project for managing student records, utilizing dynamic memory allocation, pointers, and structures.</p>
                 <a href="https://github.com/kothapallysidhartha/Student-Record-Management-System">View Project</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="internships">
-        <div class="container">
-            <h2>Internship Experience</h2>
-            <p><strong>Student Intern, Peer Assist Program, SR University</strong> (Jul 2024 – Present)</p>
-            <p>Assisted in creating a supportive learning environment, helping junior students master programming concepts in Python and C.</p>
-        </div>
-    </section>
-
-    <section id="certifications">
-        <div class="container">
-            <h2>Certifications & Accomplishments</h2>
-            <ul>
-                <li>Finalist in PEC HACKS 2024 - National-Level Hackathon</li>
-                <li>Certified in Python Basics by NPTEL (IITM)</li>
-                <li>Oracle Cloud Infrastructure Generative AI Professional</li>
-                <li>HackerRank Certified Problem Solving (Basics)</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="leetcode">
-        <div class="container">
-            <h2>LeetCode Profile</h2>
-            <p>Check out my LeetCode profile to see my progress and problem-solving skills. I have earned the 50 days badge, showcasing my consistent dedication to practicing and improving my coding skills.</p>
-            <a href="https://leetcode.com/u/sai_sidhartha/" target="_blank" class="button">Visit My LeetCode Profile</a>
-            <div class="badge">
-                <img src="leetcode.gif" alt="LeetCode 50 Days Badge" class="badge-image">
-                <p>LeetCode 50 Days Badge</p>
             </div>
         </div>
     </section>
